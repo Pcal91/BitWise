@@ -7,6 +7,7 @@
 
     <!--Library-->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <--Also have .js file in library and could utilize instead for local access-->
 
     <!--Styles-->
         <link  rel="stylesheet" href="style.css">
@@ -19,21 +20,16 @@
 <header class="header" role="banner">
     <!-- Adding the ng-app declaration to initialize AngularJS -->
     <div id="main" ng-app>
-        <!-- The navigation menu will get the value of the "active" variable as a class.
-             The $event.preventDefault() stops the page from jumping when a link is clicked. -->
 
-        <nav class="{{active}}" ng-click="$event.preventDefault()">
+        <nav class="{{active}}" ng-mouseover="$event.preventDefault()">
 
-            <!-- When a link in the menu is clicked, we set the active variable -->
-
-            <a href="#" class="Home" ng-click="active='Home'">Home</a>
+            <a href="#" class="Home" ng-mouseover="active='Home'">Home</a>
             <a href="#" class="dropbtn" ng-mouseover="active='dropbtn'">League Of Legends</a>
             <div class="dropdown-content">
-                <a href="#">OP.GG</a>
-                <a href="#">League Patches</a>
+                <a href="http://na.op.gg/">OP.GG</a>
+                <a href="https://na.leagueoflegends.com/en/news/game-updates/patch">League Patches</a>
             </div>
-            <a href="#" class="Steam" ng-click="active='Steam'">Steam</a>
-
+            <a href="https://store.steampowered.com/" class="Steam" ng-mouseover="active='Steam'">Steam</a>
 
         </nav>
     </div>
