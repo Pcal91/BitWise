@@ -27,12 +27,10 @@
             <!-- When a link in the menu is clicked, we set the active variable -->
 
             <a href="#" class="Home" ng-click="active='Home'">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">League of Legends</button>
-                <div class="dropdown-content">
-                    <a href="#">OP.GG</a>
-                    <a href="#">League Patches</a>
-                </div>
+            <a href="#" class="dropbtn" ng-mouseover="active='dropbtn'">League Of Legends</a>
+            <div class="dropdown-content">
+                <a href="#">OP.GG</a>
+                <a href="#">League Patches</a>
             </div>
             <a href="#" class="Steam" ng-click="active='Steam'">Steam</a>
 
