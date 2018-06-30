@@ -11,6 +11,8 @@ body{
 }
 
 a:hover{
+    background-color: black;
+    color: lime;
     text-decoration:none;
 }
 
@@ -45,20 +47,33 @@ nav a{
 }
 
 nav.Home .Home,
-nav.dropbtn .dropbtn,
 nav.Steam .Steam{
     background-color:lime;
     border-radius:200px;
 }
 
-nav .dropdown-content {
-    display: none;
+nav.dropbtn .dropbtn{
+    background-color:lime;
+    border-radius:200px;
 }
 
-nav .dropbtn .dropdown-content {
-    display: inline-block;
-    color: white;
-    background-color: black;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lime;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+
+}
+
+nav.dropbtn .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+nav.dropbtn:hover .dropdown-content {
+    display: block;
 }
 
 }
