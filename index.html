@@ -16,10 +16,10 @@
 
 </head>
 
-<body>
+<body ng-app="">
 <header class="header" role="banner">
     <!-- Adding the ng-app declaration to initialize AngularJS -->
-    <div id="main" ng-app>
+    <div>
 
         <nav class="{{active}}" ng-mouseover="$event.preventDefault()">
 
@@ -34,6 +34,50 @@
         </nav>
     </div>
 </header>
+
+<form>
+    Select a lane and champ:<br>
+    <select ng-model="top">
+        <option value="">Top
+        <option value="Aatrox">Aatrox
+        <option value="Gangplank">Gangplank
+    </select>
+
+    <select ng-model="mid">
+        <option value="">Mid
+        <option value="Ryze">Ryze
+        <option value="Zed">Zed
+    </select>
+
+    <select ng-model="bot">
+        <option value="">Bot
+        <option value="Ryze">Lucian
+        <option value="Zed">Vlad
+    </select>
+
+    <select ng-model="support">
+        <option value="">Support
+        <option value="Ryze">Taric
+        <option value="Zed">Janna
+    </select>
+
+    <select ng-model="jungle">
+        <option value="">Jungle
+        <option value="Ryze">Trundle
+        <option value="Zed">Ivern
+    </select>
+</form>
+
+<div ng-switch="top">
+    <div ng-switch-when="Aatrox">
+        <h1>Dogs</h1>
+        <p>Welcome to a world of dogs.</p>
+    </div>
+    <div ng-switch-when="Gangplank">
+        <h1>Tutorials</h1>
+        <p>Learn from examples.</p>
+    </div>
+</div>
 
 <div class="footer">
     <p>Prestin's Sample Web Page</p>
