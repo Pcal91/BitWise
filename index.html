@@ -5,84 +5,150 @@
     <title>BitWise Sample</title>
     <meta name="Prestin" content="BitWise Sample Page">
 
-    <!--Library-->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-        <!--Also have .js file in library and could utilize instead for local access-->
+<!--Library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<!--Also have .js file in library and could utilize instead for local access-->
 
-    <!--Styles-->
-        <link  rel="stylesheet" href="style.css">
+<!--Styles-->
+    <link  rel="stylesheet" href="style.css">
 
-    <!--Javascripts-->
-
+<!--Javascripts-->
+    <script src="table.js"></script>
 </head>
-
+<!-- Adding the ng-app to initialize AngularJS -->
 <body ng-app="">
-<header class="header" role="banner">
-    <!-- Adding the ng-app declaration to initialize AngularJS -->
-    <div>
+    <header class="header" role="banner">
+        <div>
+            <nav class="{{active}}" ng-mouseover="$event.preventDefault()">
+                <a href="https://www.google.com/" class="Home" ng-mouseover="active='Home'">Home</a>
+                <a href="https://na.leagueoflegends.com/en/" class="dropbtn" ng-mouseover="active='dropbtn'">League Of Legends</a>
+                <div class="dropdown-content">
+                    <a href="http://na.op.gg/">OP.GG</a>
+                    <a href="https://na.leagueoflegends.com/en/news/game-updates/patch">League Patches</a>
+                </div>
+                <a href="https://store.steampowered.com/" class="Steam" ng-mouseover="active='Steam'">Steam</a>
+            </nav>
+        </div>
+    </header>
+<!--Creating a form for the champion voting-->
+    <form>
+        Select a lane and vote on favorite champion:<br>
+        <select ng-model="top">
+            <option value="">Top
+            <option value="Aatrox">Aatrox
+            <option value="Gangplank">Gangplank
+        </select>
 
-        <nav class="{{active}}" ng-mouseover="$event.preventDefault()">
+        <select ng-model="mid">
+            <option value="">Mid
+            <option value="Ryze">Ryze
+            <option value="Zed">Zed
+        </select>
 
-            <a href="https://www.google.com/" class="Home" ng-mouseover="active='Home'">Home</a>
-            <a href="https://na.leagueoflegends.com/en/" class="dropbtn" ng-mouseover="active='dropbtn'">League Of Legends</a>
-            <div class="dropdown-content">
-                <a href="http://na.op.gg/">OP.GG</a>
-                <a href="https://na.leagueoflegends.com/en/news/game-updates/patch">League Patches</a>
-            </div>
-            <a href="https://store.steampowered.com/" class="Steam" ng-mouseover="active='Steam'">Steam</a>
+        <select ng-model="bot">
+            <option value="">Bot
+            <option value="Ryze">Lucian
+            <option value="Zed">Vlad
+        </select>
 
-        </nav>
+        <select ng-model="support">
+            <option value="">Support
+            <option value="Ryze">Taric
+            <option value="Zed">Janna
+        </select>
+
+        <select ng-model="jungle">
+            <option value="">Jungle
+            <option value="Ryze">Trundle
+            <option value="Zed">Ivern
+        </select>
+    </form>
+
+    <div ng-switch="top">
+        <div ng-switch-when="Aatrox">
+<!--do something-->
+        </div>
+        <div ng-switch-when="Gangplank">
+
+        </div>
     </div>
-</header>
 
-<form>
-    Select a lane and champ:<br>
-    <select ng-model="top">
-        <option value="">Top
-        <option value="Aatrox">Aatrox
-        <option value="Gangplank">Gangplank
-    </select>
+    <div ng-switch="mid">
+        <div ng-switch-when="Ryze">
+<!--do something-->
+        </div>
+        <div ng-switch-when="Zed">
 
-    <select ng-model="mid">
-        <option value="">Mid
-        <option value="Ryze">Ryze
-        <option value="Zed">Zed
-    </select>
-
-    <select ng-model="bot">
-        <option value="">Bot
-        <option value="Ryze">Lucian
-        <option value="Zed">Vlad
-    </select>
-
-    <select ng-model="support">
-        <option value="">Support
-        <option value="Ryze">Taric
-        <option value="Zed">Janna
-    </select>
-
-    <select ng-model="jungle">
-        <option value="">Jungle
-        <option value="Ryze">Trundle
-        <option value="Zed">Ivern
-    </select>
-</form>
-
-<div ng-switch="top">
-    <div ng-switch-when="Aatrox">
-        <h1>Dogs</h1>
-        <p>Welcome to a world of dogs.</p>
+        </div>
     </div>
-    <div ng-switch-when="Gangplank">
-        <h1>Tutorials</h1>
-        <p>Learn from examples.</p>
+
+    <div ng-switch="bot">
+        <div ng-switch-when="Lucian">
+ <!--do something-->
+        </div>
+        <div ng-switch-when="Vlad">
+
+        </div>
     </div>
-</div>
 
-<div class="footer">
-    <p>Prestin's Sample Web Page</p>
-</div>
+    <div ng-switch="support">
+        <div ng-switch-when="Taric">
+<!--do something-->
+        </div>
+        <div ng-switch-when="Janna">
 
+        </div>
+    </div>
+
+    <div ng-switch="jungle">
+        <div ng-switch-when="Trundle">
+<!--do something-->
+        </div>
+        <div ng-switch-when="Ivern">
+
+        </div>
+    </div>
+
+    <table style="width:700px">
+        <tr>
+            <th>Champion</th>
+            <th>Picked Percentage</th>
+        </tr>
+        <tr>
+            <td>Aatrox</td>
+        </tr>
+        <tr>
+            <td>Gangplank</td>
+        </tr>
+        <tr>
+            <td>Ryze</td>
+        </tr>
+        <tr>
+            <td>Zed</td>
+        </tr>
+        <tr>
+            <td>Lucian</td>
+        </tr>
+        <tr>
+            <td>Vlad</td>
+        </tr>
+        <tr>
+            <td>Taric</td>
+        </tr>
+        <tr>
+            <td>Janna</td>
+        </tr>
+        <tr>
+            <td>Trundle</td>
+        </tr>
+        <tr>
+            <td>Ivern</td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <p>Prestin's Sample Web Page</p>
+    </div>
 </body>
 </html>
 
