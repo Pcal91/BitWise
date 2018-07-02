@@ -8,6 +8,7 @@ body{
     text-align: center;
     background-image: url("media/tech4.jpg");
     background-size: cover;
+    color: white;
 }
 
 a:hover{
@@ -62,6 +63,7 @@ form {
     margin: 200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     background-color: blue;
     border-radius: 200px;
     position: relative;
@@ -69,7 +71,13 @@ form {
     color: white;
 }
 
+option {
+    width: 100px;
+    padding: 3px;
+}
+
 table {
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     background-color: blue;
@@ -78,7 +86,7 @@ table {
 }
 
 th, td, tr {
-    width: 50px;
+    width: 50%;
     padding: 1px;
     text-align: center;
 }
