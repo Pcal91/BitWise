@@ -32,7 +32,7 @@
     </header>
 <!--Creating a form for the champion voting-->
     <form>
-        Select a champion for more info:<br>
+        Select a League of Legends champion for more info:<br>
         <select class="champ" ng-model="champ" size="3" multiple>
             <option value="Aatrox">Aatrox
             <option value="Gangplank">Gangplank
@@ -50,7 +50,8 @@
     <div ng-switch="champ">
         <div ng-switch-when="Aatrox">
             <h1>Aatrox</h1>
-            <p> Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra,<br>
+            <h2>Top Laner</h2>
+            <p>Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra,<br>
                 and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more,<br>
                 corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh,<br>
                 he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.
@@ -58,7 +59,8 @@
         </div>
         <div ng-switch-when="Gangplank">
             <h1>Gangplank</h1>
-            <p>s unpredictable as he is brutal, the dethroned reaver king Gangplank is feared far and wide. Once, he ruled the port city of Bilgewater, <br>
+            <h2>Top Laner</h2>
+            <p>As unpredictable as he is brutal, the dethroned reaver king Gangplank is feared far and wide. Once, he ruled the port city of Bilgewater, <br>
                 and while his reign is over, there are those who believe this has only made him more dangerous. Gangplank would see Bilgewater bathed in <br>
                 blood once more before letting someone else take it—and now with pistol, cutlass, and barrels of gunpowder, he is determined to reclaim <br>
                 what he has lost.
@@ -66,8 +68,8 @@
         </div>
         <div ng-switch-when="Ryze">
             <h1>Ryze</h1>
-            <p>
-                Widely considered one of the most adept sorcerers on Runeterra, Ryze is an ancient, hard-bitten archmage with an impossibly heavy burden<br>
+            <h2>Mid Laner</h2>
+            <p>Widely considered one of the most adept sorcerers on Runeterra, Ryze is an ancient, hard-bitten archmage with an impossibly heavy burden<br>
                 to bear. Armed with immense arcane power and a boundless constitution, he tirelessly hunts for World Runes—fragments of the raw magic <br>
                 that once shaped the world from nothingness. He must retrieve these artifacts before they fall into the wrong hands, for Ryze understands<br>
                 the horrors they could unleash on Runeterra.
@@ -75,8 +77,8 @@
         </div>
         <div ng-switch-when="Zed">
             <h1>Zed</h1>
-            <p>
-                Utterly ruthless and without mercy, Zed is the leader of the Order of Shadow, an organization he created with the intent of militarizing<br>
+            <h2>Mid Laner</h2>
+            <p>Utterly ruthless and without mercy, Zed is the leader of the Order of Shadow, an organization he created with the intent of militarizing<br>
                 Ionia’s martial arts traditions to drive out Noxian invaders. During the war, desperation led him to unlock the secret shadow form—a <br>
                 malevolent spirit magic as dangerous and corrupting as it is powerful. Zed has mastered all of these forbidden techniques to destroy <br>
                 anything he sees as a threat to his nation, or his new order.
@@ -84,8 +86,8 @@
         </div>
         <div ng-switch-when="Lucian">
             <h1>Lucian</h1>
-            <p>
-                Once a Sentinel of Light, Lucian is a grim hunter of undying spirits, pursuing them relentlessly and annihilating them with his twin relic<br>
+            <h2>ADC</h2>
+            <p>Once a Sentinel of Light, Lucian is a grim hunter of undying spirits, pursuing them relentlessly and annihilating them with his twin relic<br>
                 pistols. Consumed by the need to avenge his dead wife, he will not rest until Thresh, the specter who holds her soul, is destroyed. <br>
                 Merciless and single-minded, Lucian allows nothing to stand in the path of this vengeance—anyone or anything foolish enough to try is blown<br>
                 away by an overwhelming barrage of magical gunfire.
@@ -93,8 +95,8 @@
         </div>
         <div ng-switch-when="Vlad">
             <h1>Vlad</h1>
-            <p>
-                A fiend with a thirst for mortal blood, Vladimir has influenced the affairs of Noxus since the empire’s earliest days. In addition to <br>
+            <h2>ADC</h2>
+            <p>A fiend with a thirst for mortal blood, Vladimir has influenced the affairs of Noxus since the empire’s earliest days. In addition to <br>
                 unnaturally extending his life, his mastery of hemomancy allows him to control the minds and bodies of others as easily as his own. In the<br>
                 flamboyant salons of the Noxian aristocracy, this has enabled him to build a fanatical cult of personality around himself—while in the lowest<br>
                 back alleys, it allows him to bleed his enemies dry.
@@ -102,16 +104,16 @@
         </div>
         <div ng-switch-when="Taric">
             <h1>Taric</h1>
-            <p>
-                Taric is the Aspect of the Protector, wielding incredible power as Runeterra’s guardian of life, love, and beauty. Shamed by a dereliction<br>
+            <h2>Support</h2>
+            <p>Taric is the Aspect of the Protector, wielding incredible power as Runeterra’s guardian of life, love, and beauty. Shamed by a dereliction<br>
                 of duty and exiled from his homeland Demacia, Taric ascended Mount Targon to find redemption, only to discover a higher calling among the <br>
                 stars. Imbued with the might of ancient Targon, the Shield of Valoran now stands ever vigilant against the insidious corruption of the Void.<br>
             </p>
         </div>
         <div ng-switch-when="Janna">
             <h1>Janna</h1>
-            <p>
-                Armed with the power of Runeterra’s gales, Janna is a mysterious, elemental wind spirit who protects the dispossessed of Zaun. Some believe<br>
+            <h2>Support</h2>
+            <p>Armed with the power of Runeterra’s gales, Janna is a mysterious, elemental wind spirit who protects the dispossessed of Zaun. Some believe<br>
                 she was brought into existence by the pleas of Runeterra’s sailors who prayed for fair winds as they navigated treacherous waters and braved<br>
                 rough tempests. Her favor and protection has since been called into the depths of Zaun, where Janna has become a beacon of hope to those in<br>
                 need. No one knows where or when she will appear, but more often than not, she’s come to help.
@@ -119,14 +121,15 @@
         </div>
         <div ng-switch-when="Trundle">
             <h1>Trundle</h1>
-            <p>
-                Trundle is a hulking and devious troll with a particularly vicious streak, and there is nothing he cannot bludgeon into submission—not even<br>
+            <h2>Jungle</h2>
+            <p>Trundle is a hulking and devious troll with a particularly vicious streak, and there is nothing he cannot bludgeon into submission—not even<br>
                 the Freljord itself. Fiercely territorial, he chases down anyone foolish enough to enter his domain. Then, his massive club of True Ice at the<br>
                 ready, he chills his enemies to the bone and impales them with jagged, frozen pillars, laughing as they bleed out onto the tundra.<br>
             </p>
         </div>
         <div ng-switch-when="Ivern">
             <h1>Ivern</h1>
+            <h2>Jungle</h2>
             <p>Ivern Bramblefoot, known to many as the Green Father, is a peculiar half man, half tree who roams Runeterra’s forests, cultivating life<br>
                 everywhere he goes. He knows the secrets of the natural world, and holds deep friendships with all things that grow, fly, and scuttle. Ivern<br>
                 wanders the wilderness, imparting strange wisdom to any he meets, enriching the forests, and occasionally entrusting loose-lipped butterflies<br>
@@ -137,38 +140,40 @@
 
     <table style="width:700px">
         <tr>
-            <th>Champion</th>
-            <th rowspan="11"></th>
+            <th class="a"> Select Champion</th>
+            <th class="b" rowspan="11">
+                <img id="image" src="media/Aatrox_0.jpg" style="width:80%;height:30%;">
+            </th>
         </tr>
         <tr>
-            <td>Aatrox</td>
+            <td><input type="radio" name="champ" onclick="myFunction(0)" checked>Aatrox</td>
         </tr>
         <tr>
-            <td>Gangplank</td>
+            <td><input type="radio" name="champ" onclick="myFunction(1)">Gangplank</td>
         </tr>
         <tr>
-            <td>Ryze</td>
+            <td><input type="radio" name="champ" onclick="myFunction(2)">Ryze<br></td>
         </tr>
         <tr>
-            <td>Zed</td>
+            <td><input type="radio" name="champ" onclick="myFunction(3)">Zed<br></td>
         </tr>
         <tr>
-            <td>Lucian</td>
+            <td><input type="radio" name="champ" onclick="myFunction(4)">Vlad</td>
         </tr>
         <tr>
-            <td>Vlad</td>
+            <td><input type="radio" name="champ" onclick="myFunction(5)">Lucian</td>
         </tr>
         <tr>
-            <td>Taric</td>
+            <td><input type="radio" name="champ" onclick="myFunction(6)">Taric</td>
         </tr>
         <tr>
-            <td>Janna</td>
+            <td><input type="radio" name="champ" onclick="myFunction(7)">Janna</td>
         </tr>
         <tr>
-            <td>Trundle</td>
+            <td><input type="radio" name="champ" onclick="myFunction(8)">Trundle</td>
         </tr>
         <tr>
-            <td>Ivern</td>
+            <td><input type="radio" name="champ" onclick="myFunction(9)">Ivern</td>
         </tr>
     </table>
 

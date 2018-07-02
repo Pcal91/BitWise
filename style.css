@@ -11,6 +11,10 @@ body{
     color: white;
 }
 
+h2 {
+    font-size: 20px;
+}
+
 a:hover{
     background-color: lime;
     text-decoration: none;
@@ -25,10 +29,10 @@ nav{
 nav a{
     display: inline-block;
     padding: 18px 30px;
-    color: white !important;
+    color: white;
     font-weight: bold;
     font-size: 16px;
-    text-decoration: none !important;
+    text-decoration: none;
     line-height: 1;
     text-transform: uppercase;
 }
@@ -86,17 +90,26 @@ table {
 }
 
 th, td, tr {
-    width: 50%;
     padding: 1px;
-    text-align: center;
 }
 
-th {
-    padding: 5px;
+td {
+    padding-left:150px;
+    text-align: left;
+}
+
+th.a {
+    text-align:right;
+    padding-right: 20px;
     font-size: 18px;
 }
 
-tr:hover {
+th.b {
+    width:60%;
+    padding-right:40px;
+}
+
+td:hover {
     background-color: #2a5cff;
 }
 
@@ -108,6 +121,4 @@ tr:hover {
     background-color: blue;
     color: white;
     text-align: center;
-}
-
 }
